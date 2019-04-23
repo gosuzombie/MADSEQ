@@ -215,7 +215,7 @@ setMethod(
                       p2*dbeta(seq(0,1,0.01),a2,b2),
                       p3*dbeta(seq(0,1,0.01),a3,b3),
                       p4*dbeta(seq(0,1,0.01),a4,b4))
-            y_max = max(y_max[!is.infinite(y_max)])
+            y_max = max(na.omit(y_max))
             curve(p1*dbeta(x,a1,b1), col="green4", lwd=2,
                     xlab="alternative allele frequency", ylab="density",
                     main="posterior distribution of mixtures (LOH)",
