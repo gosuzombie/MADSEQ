@@ -276,6 +276,10 @@ runMadSeq = function(
     
     ## model comparison
     # after running all models to fit the data, then compare models by BIC
+    message("saving intermediate output for debug")
+    debug_obj <- list(normal, monosomy, mitotic_trisomy,meiotic_trisomy, LOH)
+    saveRDS(debug_obj, file = "debug_obj.RDS")
+    
     message("models done, comparing models")
     BIC = c(normal[[2]], monosomy[[2]], mitotic_trisomy[[2]], 
             meiotic_trisomy[[2]], LOH[[2]])
