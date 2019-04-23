@@ -279,7 +279,7 @@ runMadSeq = function(
     message("saving intermediate output for debug")
     debug_obj <- list(normal, monosomy, mitotic_trisomy,meiotic_trisomy, LOH)
     saveRDS(debug_obj, file = "debug_obj.RDS")
-    
+
     message("models done, comparing models")
     BIC = c(normal[[2]], monosomy[[2]], mitotic_trisomy[[2]], 
             meiotic_trisomy[[2]], LOH[[2]])
@@ -294,5 +294,6 @@ runMadSeq = function(
     cat(paste("model selected:",selected))
     res = get(selected)
     madseq = MadSeq(posterior=res[[1]],deltaBIC=delta_BIC)
-    madseq
+    #return(madseq)
+    return(debug_obj)
 }
