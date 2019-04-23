@@ -156,11 +156,11 @@ runNormal = function(
         if (upper<=1.5) message("normal model is converged!")
         else if (upper > 1.5 & upper <= 10){
             message("normal model is not fully converged")
-            cat(diag)
+            print(diag)
         } 
         else if (upper>10){
             message("normal model is not converged")
-            cat(diag)
+            print(diag)
         }
     }
     
@@ -206,11 +206,11 @@ runMonosomy = function(
         if (upper<=1.5) message("monosomy model is converged!")
         else if (upper > 1.5 & upper <= 10){
             message("monosomy model is not fully converged")
-            cat(diag)
+            print(diag)
         } 
         else if (upper>10){
             message("monosomy model is not converged")
-            cat(diag)
+            print(diag)
         }
     }
     
@@ -257,11 +257,11 @@ runMitoticTrisomy = function(
         if (upper<=1.5) message("mitotic trisomy model is converged!")
         else if (upper > 1.5 & upper <= 10){
             message("mitotic trisomy model is not fully converged")
-            cat(diag)
+            print(diag)
         } 
         else if (upper>10){
             message("mitotic trisomy model is not converged")
-            cat(diag)
+            print(diag)
         }
     }
     
@@ -308,11 +308,11 @@ runMeioticTrisomy = function(
         if (upper<=1.5) message("meiotic trisomy model is converged!")
         else if (upper > 1.5 & upper <= 10){
             message("meiotic trisomy model is not fully converged")
-            cat(diag)
+            print(diag)
         } 
         else if (upper>10){
             message("meiotic trisomy model is not converged")
-            cat(diag)
+            print(diag)
         }
     }
     
@@ -358,11 +358,11 @@ runLOH = function(
         if (upper<=1.5) message("LOH model is converged!")
         else if (upper > 1.5 & upper <= 10){
             message("LOH model is not fully converged")
-            cat(diag)
+            print(diag)
         } 
         else if (upper>10){
             message("LOH model is not converge")
-            cat(diag)
+            print(diag)
         }
     }
     
