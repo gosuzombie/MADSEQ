@@ -23,7 +23,7 @@ model{
     
   mu[1] <- m+d1
   mu[2] <- m-d2
-  mu[3] <- m * 2
+  mu[3] <- nSites * p[1]
 
   # coverage part
   for (i in 1:nSites){
