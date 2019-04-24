@@ -337,7 +337,7 @@ runLOH = function(
     nStep,
     thinSteps){
     ## parameters for LOH model
-    parameters_LOH = c("p_cov","m_cov","r_cov","kappa","f","cgp1","cgp2","d1","d2","m", "p")
+    parameters_LOH = c("p_cov","m_cov","r_cov","kappa","f","cgp1","cgp2","d1","d2","m","p","mu")
     ## generate dataList for the MCMC
     dataList = creatDataList_LOH(data,control_coverage,data_coverage)
     ## run LOH model
