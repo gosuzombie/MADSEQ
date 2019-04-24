@@ -294,6 +294,5 @@ runMadSeq = function(
     cat(paste("model selected:",selected))
     res = get(selected)
     madseq = MadSeq(posterior=res[[1]],deltaBIC=delta_BIC)
-    #return(madseq)
-    return(debug_obj)
+    return(madseq)
 }
